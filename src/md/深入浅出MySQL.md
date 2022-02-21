@@ -95,7 +95,7 @@ SQL:Structure Query Language(结构化查询语言)
   > sys存储系统的调优和诊断信息  
   > use name;  
   > show tables;  
-  > drop database name;
+  > drop database name;  
   > create table name (  
   >   column1 type1 constraints1,  
   >   column2 type2 constraints2  
