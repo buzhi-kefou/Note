@@ -99,4 +99,91 @@ SQL:Structure Query Language(结构化查询语言)
   > create table name (  
   >   column1 type1 constraints1,  
   >   column2 type2 constraints2  
-  > )
+  > );  
+  > desc name;  
+  > show create table name;  
+  > drop table name;  
+  > alter table name modify|change|drop|add column dataType first|after column;  
+  > alter table name rename to newName;
+  > 
+- DML
+  > insert into name (col1,col2,col3) values (val1,val2,val3);  
+  > insert into name (col1,col2,col3) values (val1,val2,val3),(val4,val5,val6);  
+  > update t1,t2,...tn set field1=val1,field2=val2 where condition;  
+  > delete from t where condition;  
+  > select * from t where condition order by field asc|desc limit offset,count;  
+  > select field,func from t where condition group by field with rollup having condition;  
+  > select * from t1 union select * from t2;
+  > 
+- DCL
+  > grant some privileges on database.table to 'user'@'device' identified by 'password';  
+  > revoke some privileges on databes.table from 'user'@'device';
+  > 
+#### 使用帮助
+#### 元数据信息
+### MySQL数据类型
+#### 数值类型
+- tinyInt
+- smallInt
+- mediumInt
+- int(integer)
+- bigInt
+- float
+- double
+- decimal(m,n)
+- bit(n)
+#### 日期时间类型
+- timestamp
+- datetime
+- date
+- time
+#### 字符串类型
+- char(n)
+- varchar(n)
+- tinyBlob
+- blob
+- mediumBlob
+- longBlob
+- tinyText
+- text
+- mediumText
+- longText
+- binary(n)
+- varbinary(n)
+- enum('a','b','c','d')
+- set('a','b','c','d')
+### 运算符
+#### 算术运算符
+- `+`
+- `-`
+- `*`
+- `/`,div
+- `%`,mod
+#### 比较运算符
+- `=`
+- `!=`
+- `<=>`
+- `<`
+- `<=`
+- `>`
+- `>=`
+- between and
+- in
+- is null
+- is not null
+- like
+- not like
+- regexp
+#### 逻辑运算符
+- and  &&
+- or   ||
+- not  !
+- xor
+#### 位运算符
+- &
+- |
+- ^
+- ~
+- `>>`
+- `<<`
+### 常用函数
